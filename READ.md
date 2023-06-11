@@ -22,10 +22,19 @@ This is a Project on Ecommerce dataset. The dataset came in to forms, an excel s
 
 ![Alt Text]()
 
-
+## DASHBOARD KEY FEATURES
+* Four **KPI's** with one for Sales, Quantity, Profit, and Profit Margin.
+* A **Map** for sales by state.
+* A **Bar Chart** for Top Products by sales and another for Bottom Products by sales.
+* A **Doughnut Chart** for Sale Per shipping method.
+* A **detail table** for Year over Year sales per Category
 
 ## THE DASHBOARD
 
 ![Alt Text](https://github.com/Mario-Gozie/Ecommerce-Data-Visualization/blob/main/Images/The%20Dashboard%20(2).png)
+
+## GENERAL INSIGHTS
+
+
 
 ![Alt Text](https://github.com/Mario-Gozie/Ecommerce-Data-Visualization/blob/main/Images/thanks.jpg)

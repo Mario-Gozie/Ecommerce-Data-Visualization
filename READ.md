@@ -23,11 +23,14 @@ This is a Project on Ecommerce dataset. The dataset came in to forms, an excel s
 ![Alt Text]()
 
 ## DASHBOARD KEY FEATURES
+* A **Segment Filter** for filtering the data by either consumer, Home office or cooperate segment
 * Four **KPI's** with one for Sales, Quantity, Profit, and Profit Margin.
 * A **Map** for sales by state.
 * A **Bar Chart** for Top Products by sales and another for Bottom Products by sales.
 * A **Doughnut Chart** for Sale Per shipping method.
 * A **detail table** for Year over Year sales per Category
+* There are Action filters for the Map for filtering by state, and another for the region dougnut chart for filtering based on Region
+
 
 ## THE DASHBOARD
 

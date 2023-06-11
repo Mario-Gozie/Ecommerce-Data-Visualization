@@ -38,6 +38,9 @@ This is a Project on Ecommerce dataset. The dataset came in to forms, an excel s
 
 ## GENERAL INSIGHTS
 
+* The Ecommerce data showed that sales of over **11 thousand dollars** was made for the year 2022 with a drop of less than **1%** when compared with the previous year. interestingly, the business made a profit of over a thousand dollars which is **4.5%** higher that the previous year's Profit.
+* The **West Region (32.22%)** Performed better than other Regions in the United states with Califonia being the main contributor to their success.
+* For shipping Type, **Standard Class** tops the list as it contributed **60.51%** while **Same Day** is the least with **5.17%**
 
 
 ![Alt Text](https://github.com/Mario-Gozie/Ecommerce-Data-Visualization/blob/main/Images/thanks.jpg)

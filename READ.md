@@ -71,7 +71,7 @@ After Transformation and loading in the Data warhouse, The Data Masters (Data An
 
 `select * from ecommerce_data;`
 
-![Alt Text](C:\Users\Mario Gozie\Desktop\New folder\Projects\Ecommerce Data Project\Images\first view Table.png)
+![Alt Text](https://github.com/Mario-Gozie/Ecommerce-Data-Visualization/blob/main/Images/first%20view%20Table.png)
 
 ## YTD SALES
 
@@ -80,7 +80,7 @@ After Transformation and loading in the Data warhouse, The Data Masters (Data An
  `group by YEAR(order_date)`
  `order by years desc;`
 
- ![Alt Text](C:\Users\Mario Gozie\Desktop\New folder\Projects\Ecommerce Data Project\Images\Total_sales.png)
+ ![Alt Text](https://github.com/Mario-Gozie/Ecommerce-Data-Visualization/blob/main/Images/Total_sales.png)
  
 ## YTD PROFIT
  
@@ -89,7 +89,7 @@ After Transformation and loading in the Data warhouse, The Data Masters (Data An
  `group by YEAR(order_date)`
  `order by years desc;`
 
- ![Alt Text](C:\Users\Mario Gozie\Desktop\New folder\Projects\Ecommerce Data Project\Images\Total_Profit.png)
+ ![Alt Text](https://github.com/Mario-Gozie/Ecommerce-Data-Visualization/blob/main/Images/Total_Profit.png)
  
  ## YTD QUANTITY
 
@@ -98,7 +98,7 @@ After Transformation and loading in the Data warhouse, The Data Masters (Data An
 ` group by YEAR(order_date)`
 ` order by years desc;`
 
-![Alt Text](C:\Users\Mario Gozie\Desktop\New folder\Projects\Ecommerce Data Project\Images\Total_quantity_sold.png)
+![Alt Text](https://github.com/Mario-Gozie/Ecommerce-Data-Visualization/blob/main/Images/Total_quantity_sold.png)
 
 ## YTD PROFIT MARGIN
 

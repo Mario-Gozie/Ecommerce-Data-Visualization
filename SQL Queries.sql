@@ -135,14 +135,6 @@ group by product_name
 order by Total_sales asc;
 
 -- YOY poduct category
-with organized_catgory as (select Year(order_date) as Years, category_name, sum(sales_per_order)as Total_sales, 
-ROW_NUMBER() over(partition by category_name order by year(order_date)) as row_num
- from ecommerce_data
-group by Year(order_date),category_name)
-
-select Years, category_name, case when lead(category_name) over(order by (select null))
-= lag(category_name) over(order by (select null))
-then lead(Total_sales) over(order by (select null))/Total_sales end from organized_catgory;
 
 go
 with organized_catgory as (select Year(order_date) as Years, category_name, sum(sales_per_order)as Total_sales, 
@@ -160,11 +152,17 @@ select category_name, YoY_per_category from YoY_calculated
 where YoY_per_category != ' %'
 
 go
--- Previous year current year performance
+-- Previous year and current year performance by category in a pivot table
 
 with Yet_to_pivot as (select YEAR(order_date) as The_Year, category_name, 
 sales_per_order from ecommerce_data)
 
 select * from Yet_to_pivot
 pivot (sum(sales_per_order) for The_Year in ([2021],[2022])) as Pivoted_details
-order by category_name --optional
+order by category_name; --optional
+
+--Query for joining geographical data to sales data
+
+select * from ecommerce_data as a 
+join us_state_long_lat_codes as b
+on a.customer_state = b.name

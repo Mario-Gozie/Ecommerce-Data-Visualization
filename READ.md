@@ -193,7 +193,7 @@ After Transformation and loading in the Data warhouse, The Data Masters (Data An
 `select Years, customer_country, customer_region, customer_state, sales_per_order from ordering_date`
 `where Years = (select Max(Year(order_date)) from ecommerce_data)`
 
-![Alt Text](C:\Users\Mario Gozie\Desktop\New folder\Projects\Ecommerce Data Project\Images\sales Per region per state)g)
+![Alt Text](https://github.com/Mario-Gozie/Ecommerce-Data-Visualization/blob/main/Images/sales%20Per%20region%20per%20state%20short.png)
 
 ### YTD PROPOTION OF SALES PER REGION
 

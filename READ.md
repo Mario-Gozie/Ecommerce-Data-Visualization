@@ -5,7 +5,7 @@
 
 This is a Project on Ecommerce dataset. The dataset came in to forms, an excel sheet containing transaction details and a csv file containing geographical detail (logitudes and latitudes). The Geographical data is what will let me create maps seemlessly.
 
-##THE TASK
+## THE TASK
 
 **Obiwezy** is an E-commerce firm that supplies various items, with its head office in **Carlifonia USA**,
 and many regional offices in The United States. **Bharin Patel** is the sales director of this establishment. He knows the business is growing dynamically but his challenge is that he can't track the sales and insights about the business. He has regional managers for **East**, **West**,**South** and **Central** Region in the United State. Whenever he calls them, they will tell him their region's sales per quater and sometimes send spread sheet to him. unfortunately, he finds it difficult as every other human to process these verbal conversation and spreadsheet. He also feel that these managers do sugar-coat details about sales to make him feel everything is fine. Bharin Patel gets frustrated with all these because he senses that sales is declining but he cant have a clear picture. He wants to know weak regions in sales to decide on promotional offers and other measures to engage customers in other to boost sales. Hence, he feels he would appreciate a dashboard where he could see how numbers are trending daily and also get a monthly reminder at the end of the month.

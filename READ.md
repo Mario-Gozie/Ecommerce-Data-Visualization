@@ -110,7 +110,8 @@ After Transformation and loading in the Data warhouse, The Data Masters (Data An
     `group by YEAR(order_date)`
     `order by years desc;`
 
-    ![Alt Text](C:\Users\Mario Gozie\Desktop\New folder\Projects\Ecommerce Data Project\Images\YoY_Profit_Margin.png)
+![Alt Text](https://github.com/Mario-Gozie/Ecommerce-Data-Visualization/blob/main/Images/YoY_Profit_Margin.png)
+    
 
 ## YEAR OVER YEAR SALES (YOY SALES)
 
@@ -124,7 +125,7 @@ After Transformation and loading in the Data warhouse, The Data Masters (Data An
 `select YoY_sales from YoY_with_year`
 `where YoY_sales != ' %';`
 
-![Alt Text](C:\Users\Mario Gozie\Desktop\New folder\Projects\Ecommerce Data Project\Images\YoY_Total_sales.png)
+![Alt Text](https://github.com/Mario-Gozie/Ecommerce-Data-Visualization/blob/main/Images/YoY_Total_sales.png)
 
 ## YEAR OVER YEAR PROFIT (YOY PROFIT)
 
@@ -138,7 +139,7 @@ After Transformation and loading in the Data warhouse, The Data Masters (Data An
 `select YoY_profit from YoY_with_year`
 `where YoY_profit != ' %';`
 
-![Alt Text](C:\Users\Mario Gozie\Desktop\New folder\Projects\Ecommerce Data Project\Images\YoY_Profit.png)
+![Alt Text](https://github.com/Mario-Gozie/Ecommerce-Data-Visualization/blob/main/Images/YoY_Profit.png)
 
 ## YEAR OVER YEAR QUANTITIY OF ITEMS SOLD (YOY QUANTITY)
 `with year_Quantity as (select YEAR(order_date) as years, sum(order_quantity) as total_Quantity `
@@ -151,7 +152,7 @@ After Transformation and loading in the Data warhouse, The Data Masters (Data An
 `select YoY_quantity from YoY_with_year`
 `where YoY_quantity != ' %';`
 
-![Alt Text](C:\Users\Mario Gozie\Desktop\New folder\Projects\Ecommerce Data Project\Images\YoY_Quantity.png)
+![Alt Text](https://github.com/Mario-Gozie/Ecommerce-Data-Visualization/blob/main/Images/YoY_Quantity.png)
 
 ## YOY PROFIT MARGIN
 
@@ -168,7 +169,7 @@ After Transformation and loading in the Data warhouse, The Data Masters (Data An
 `as YoY_Profit_Margin_cleaned`
 `where YoY_Profit_margin != ' %';`
 
-![Alt Text](C:\Users\Mario Gozie\Desktop\New folder\Projects\Ecommerce Data Project\Images\YoY_Profit_Margin.png)
+![Alt Text](https://github.com/Mario-Gozie/Ecommerce-Data-Visualization/blob/main/Images/YoY_Profit_Margin.png)
 
 ## YTD SALES PER REGION
 
@@ -178,7 +179,7 @@ After Transformation and loading in the Data warhouse, The Data Masters (Data An
  `sales_per_order from ecommerce_data`
  `where Year(order_date) = (select max(year(order_date)) from ecommerce_data)`
 
- ![Alt Text](C:\Users\Mario Gozie\Desktop\New folder\Projects\Ecommerce Data Project\Images\sales Per region per state short.png)
+ ![Alt Text](https://github.com/Mario-Gozie/Ecommerce-Data-Visualization/blob/main/Images/sales%20Per%20region%20per%20state%20short.png)
 
  ### Alternatively
 
@@ -192,7 +193,7 @@ After Transformation and loading in the Data warhouse, The Data Masters (Data An
 `select Years, customer_country, customer_region, customer_state, sales_per_order from ordering_date`
 `where Years = (select Max(Year(order_date)) from ecommerce_data)`
 
-![Alt Text](C:\Users\Mario Gozie\Desktop\New folder\Projects\Ecommerce Data Project\Images\sales Per region per state long.png)
+![Alt Text](C:\Users\Mario Gozie\Desktop\New folder\Projects\Ecommerce Data Project\Images\sales Per region per state)g)
 
 ### YTD PROPOTION OF SALES PER REGION
 
@@ -203,7 +204,7 @@ After Transformation and loading in the Data warhouse, The Data Masters (Data An
 `where YEAR(order_date) = (select max(year(order_date)) from ecommerce_data)`
 `group by customer_region;`
 
-![Alt Text](C:\Users\Mario Gozie\Desktop\New folder\Projects\Ecommerce Data Project\Images\Customer Region Propotion.png)
+![Alt Text](https://github.com/Mario-Gozie/Ecommerce-Data-Visualization/blob/main/Images/sales%20Per%20region%20per%20state%20short.png)
 
 ## YTD SALES PER SHIPPING TYPE
 
@@ -214,7 +215,7 @@ After Transformation and loading in the Data warhouse, The Data Masters (Data An
 `where YEAR(order_date) = (select max(year(order_date)) from ecommerce_data)`
 `group by shipping_type;`
 
-![Alt Text](C:\Users\Mario Gozie\Desktop\New folder\Projects\Ecommerce Data Project\Images\shipping_type_propotion.png)
+![Alt Text](https://github.com/Mario-Gozie/Ecommerce-Data-Visualization/blob/main/Images/shipping_type_propotion.png)
 
 ## YTD TOP 5 PRODUCT BY SALES
 
@@ -223,7 +224,7 @@ After Transformation and loading in the Data warhouse, The Data Masters (Data An
 `group by product_name`
 `order by Total_sales desc;`
 
-![Alt Text](C:\Users\Mario Gozie\Desktop\New folder\Projects\Ecommerce Data Project\Images\Top5 sales.png)
+![Alt Text](https://github.com/Mario-Gozie/Ecommerce-Data-Visualization/blob/main/Images/Top5%20sales.png)
 
 ## YTD BOTTOM 5 PRODUCT BY SALES
 
@@ -232,7 +233,7 @@ After Transformation and loading in the Data warhouse, The Data Masters (Data An
 `group by product_name`
 `order by Total_sales asc;`
 
-![Alt Text](C:\Users\Mario Gozie\Desktop\New folder\Projects\Ecommerce Data Project\Images\Bottom5 products.png)
+![Alt Text](https://github.com/Mario-Gozie/Ecommerce-Data-Visualization/blob/main/Images/Bottom5%20products.png)
 
 ## YOY PRODUCT BY CATEGORY
 
@@ -251,9 +252,9 @@ After Transformation and loading in the Data warhouse, The Data Masters (Data An
 `select category_name, YoY_per_category from YoY_calculated`
 `where YoY_per_category != ' %'`
 
-![Alt Text](C:\Users\Mario Gozie\Desktop\New folder\Projects\Ecommerce Data Project\Images\YoY_per_category.png)
+![Alt Text](https://github.com/Mario-Gozie/Ecommerce-Data-Visualization/blob/main/Images/YoY_per_category.png)
 
-## PREVIOUS AND CURRENT YEAR PERFORMANCE IN A PIVOT TABLE
+## PREVIOUS AND CURRENT YEAR PERFORMANCE PER CATEGORY IN A PIVOT TABLE
 
 `with Yet_to_pivot as (select YEAR(order_date) as The_Year, category_name,`
 `sales_per_order from ecommerce_data)`
@@ -262,10 +263,10 @@ After Transformation and loading in the Data warhouse, The Data Masters (Data An
 `pivot (sum(sales_per_order) for The_Year in ([2021],[2022])) as Pivoted_details`
 `order by category_name;`
 
-![Alt Text](C:\Users\Mario Gozie\Desktop\New folder\Projects\Ecommerce Data Project\Images\Pivot table sale per category per year.png)
+![Alt Text](https://github.com/Mario-Gozie/Ecommerce-Data-Visualization/blob/main/Images/Pivot%20table%20sale%20per%20category%20per%20year.png)
 
 
-## PREPARATION FOR VISUALIZATION WITH TABLEAU.
+## PREPARATION FOR VSUALIZATION WITH TABLEAU.
 
   I used **Sql** query to join the two tables (The Transaction table and the Geographical Data) however since Tableau has **Relationship** feature tha can join data from different data source, I used it to join the transaction detail (Excel file) and the Geographical data (CSV file).
 
@@ -283,7 +284,7 @@ After Transformation and loading in the Data warhouse, The Data Masters (Data An
 
 ### TABLEAU RELATIONSHIP
 
-![Alt Text](C:\Users\Mario Gozie\Desktop\New folder\Projects\Ecommerce Data Project\Images\Tableau Relationship.png)
+![Alt Text](https://github.com/Mario-Gozie/Ecommerce-Data-Visualization/blob/main/Images/Tableau%20Relationship.png)
 
 ## DASHBOARD KEY FEATURES
 * A **Segment Filter** for filtering the data by either consumer, Home office or cooperate segment
